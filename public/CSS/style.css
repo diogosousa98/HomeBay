@@ -1,0 +1,386 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*  
+    Created on : NOV 22, 2020, 10:12:59 AM
+    Author     : tiagooliveira
+*/
+.Mapa{
+    margin: 580px;
+    font: Arial;
+    font-size: 100px;
+    padding: 10px;
+    float: inside;
+    line-height:233px; 
+}
+.hotel{
+    margin: 00px;
+    font: Arial;
+    font-size: 20px;
+    padding: 0px;
+    width: 100%;
+    float: left;
+    line-height:20px; 
+    background-color: #D0D0D0;
+}
+.footer {
+    margin: 00px;
+    font: Arial;
+    font-size: 20px;
+    padding: 0px;
+    width: 100%;
+    float: left;
+    line-height:20px; 
+    background-color: #D0D0D0;
+}
+.PrivacyPolicy{
+    margin: 325px;
+    font: Arial;
+    font-size: 100px;
+    padding: 53px;
+    float: inside;
+    line-height:233px; 
+}
+.t18{
+    font: Arial;
+    font-size: 22px;
+    margin: 90px;
+    line-height: 25px;
+}
+.t17{
+    font: Arial;
+    font-size: 20px;
+    margin: 90px;
+    line-height: 25px;
+}
+.t6{
+    font: Arial;
+    font-size: 20px;
+    margin: 90px;
+    line-height: 25px;
+}
+.t5{
+    margin: 325px;
+    font: Arial;
+    font-size: 100px;
+    padding: 64px;
+    float: inside;
+    line-height:233px; 
+}
+.t4{
+    margin: 325px;
+    font: Arial;
+    font-size: 100px;
+    padding: 128px;
+    float: inside;
+    line-height:233px; 
+}
+.t3{
+    margin: 325px;
+    font: Arial;
+    font-size: 100px;
+    padding: 245px;
+    float: inside;
+    line-height:233px; 
+}
+.t2{
+    margin: 325px;
+    font: Arial;
+    font-size: 100px;
+    padding: 275px;
+    float: inside;
+    line-height:233px; 
+}
+.t1{
+    margin: 325px;
+    font: Arial;
+    font-size: 100px;
+    padding: 250px;
+    float: inside;
+    line-height:233px; 
+}
+.feacture2{
+    position: relative;
+    width: 20%;
+    Float: left;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 20px;
+    font-size: 17px;
+}
+.feacture1{
+    position: relative;
+    width: 20%;
+    Float: left;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 20px;
+    font-size: 17px;
+}
+.hvrimg {
+    position: relative;
+    width: 20%;
+    Float:left;
+    margin: 20px;
+    font-size: 17px;
+}
+.picture{
+    display: block;
+    width: 100%; 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: orangered;
+}
+.hvrimg:hover .overlay {
+    opacity: 1;
+}
+#SecondSection { 
+    padding: 20px;
+    margin-left: 120px;
+}
+.textimg {
+    color: whitesmoke;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.divflot{
+    float: left;
+    padding: 0.5em; 
+    margin: 10px
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 14px -1px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button:hover {
+    opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: left;
+    padding-top: 8px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+
+.cancelbtn {
+        width: 100%;
+        margin: 10px;
+    }
+
+body{
+    font-family: Arial;
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;  }
+.Registrar {
+    font-family: Arial;
+    font-size: 15px;
+    background-color: orangered;
+    float:left;
+    margin: -12px;
+    padding: 10px;
+    border-radius: 9px;
+}
+.clearm
+{
+    clear: both; 
+}
+.login1{  /* login to open the login box */
+    border-radius: 9px;
+    float: right;
+    background-color: orangered;
+    color: white;
+    padding: 12px 20px;
+    margin: 7px 13px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.Login2{   /* login after put the information */
+    border-radius: 9px;
+    float: right;
+    background-color: orangered;
+    color: white;
+    padding: 14px 20px;
+    margin: 13px -8px;
+    border: none;
+    cursor: pointer;
+    width: 103%;   
+}
+
+/* Booton to cancel and leave login */
+.cancelbtn{
+    border-radius: 9px;
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
+    float: right;
+    background-color: red;
+    color: white;
+    padding: 13px 20px;
+    margin: -12px -11px;
+    border: none;
+    cursor: pointer;
+}
+.navbara{ 
+    border-radius: 0.7rem;
+    text-align: center;
+    width: 98.42%;
+    background: orangered; 
+    margin: 10px; 
+}
+.navbara ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    border-radius: 0.7rem;
+}
+.navbara ul li a {
+    display: block;
+    padding: 25px;
+    color: black;
+    text-decoration: none;
+    width: 186.2px;  
+    border-radius: 0.7rem;
+}
+.navbara ul:after {
+    content:""; clear:both;  
+    display: block;
+    border-radius: 0.7rem;
+}
+.navbara ul li {
+    float: left;
+    border-radius: 0.7rem;
+}
+.navbara ul ul {
+    display: none; 
+    border-radius: 0.7rem;
+}
+.navbara ul li:hover > ul {
+    display: block; 
+    border-radius: 0.7rem;
+}
+.navbara ul li:hover {
+    background: black;
+    transition: 0.8s; 
+    border-radius: 0.7rem;
+}
+.navbara ul li:hover a {
+    color: white;
+    border-radius: 0.7rem;
+}
+img{
+    margin:0;
+    padding:0;
+}
+.form-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.form-inline .form-check {
+    width: 100%;
+}
+
+.my-2 {
+    margin-right: 15px;
+    float: right;
+    margin-bottom: 0.5rem !important;
+}
+.my-2 {
+    margin-top: 0.5rem !important;
+}
+.my-lg-0 {
+    margin-bottom: 0 !important;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.7rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
