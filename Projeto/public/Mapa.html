@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home Bay</title>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+        
     </head> 
     <body>
         <section class="firstsection">
@@ -19,9 +23,9 @@
                 <form class="modal-content animate" action="/action_page.php">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
-
+                        <img src="FOTOS/LOGO.png" class="avatar" width="222" height="80">
                     </div>
-                    <center> <h2> Login </h2> </center>
+                    <center> <h2></h2> </center>
                     <div class="container">
                         <label><b>Username</b></label>
                         <input type="text" placeholder="Enter Username" name="uname" required><br><br>
@@ -54,7 +58,7 @@
                 <ul>
                     <li><a href="Index.html"> HOME </a></li>
                     <li><a href="Mapa.html"> MAPA </a></li>
-                    <li><a href="Contatos.html"> CONTATOS </a></li>    
+                    <li><a href="Equipa.html"> EQUIPA </a></li>   
                     <li><a href="Quemsomos.html"> QUEM SOMOS</a></li>                       
                     <li><a href="Lista.html"> LISTA DE CASAS </a></li>     
                     <li><a href="Historico.html"> HISTÓRICO </a></li> 
@@ -65,13 +69,19 @@
 
         </section>
     <h10 class="Mapa"> Mapa <h10/> 
-        <div class="clearm"></div>  
-
-        <p class="t18"><strong> ........ </strong></p>
-        <p class="t17">  .......    </p>
-
         
+            <div id="map"></div>
 
+            <script type="text/javascript">
+                var map = L.map('map').setView([39.65, -7.50], 7);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([39.4281676, -8.7024168]).addTo(map)
+                
+            </script>
     </body>
     <footer class="footer">
         <p><strong> Email: </strong><a href="mailto:geral@homebay.pt"> geral@homebay.pt  </a></p>  

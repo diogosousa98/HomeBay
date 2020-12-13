@@ -10,21 +10,12 @@ and open the template in the editor.
 .Mapa{
     margin: 580px;
     font: Arial;
-    font-size: 100px;
+    font-size: 80px;
     padding: 10px;
     float: inside;
     line-height:233px; 
 }
-.hotel{
-    margin: 00px;
-    font: Arial;
-    font-size: 20px;
-    padding: 0px;
-    width: 100%;
-    float: left;
-    line-height:20px; 
-    background-color: #D0D0D0;
-}
+
 .footer {
     margin: 00px;
     font: Arial;
@@ -64,7 +55,7 @@ and open the template in the editor.
 .t5{
     margin: 325px;
     font: Arial;
-    font-size: 100px;
+    font-size: 800px;
     padding: 64px;
     float: inside;
     line-height:233px; 
@@ -72,31 +63,31 @@ and open the template in the editor.
 .t4{
     margin: 325px;
     font: Arial;
-    font-size: 100px;
-    padding: 128px;
+    font-size: 80px;
+    padding: 200px;
     float: inside;
     line-height:233px; 
 }
 .t3{
-    margin: 325px;
+    margin: auto;
     font: Arial;
-    font-size: 100px;
-    padding: 245px;
+    font-size: 80px;
+    padding: 400px;
     float: inside;
     line-height:233px; 
 }
 .t2{
-    margin: 325px;
+    margin: auto;
     font: Arial;
-    font-size: 100px;
-    padding: 275px;
+    font-size: 80px;
+    padding: 450px;
     float: inside;
     line-height:233px; 
 }
 .t1{
     margin: 325px;
     font: Arial;
-    font-size: 100px;
+    font-size: 70px;
     padding: 250px;
     float: inside;
     line-height:233px; 
@@ -146,6 +137,7 @@ and open the template in the editor.
 #SecondSection { 
     padding: 20px;
     margin-left: 120px;
+    
 }
 .textimg {
     color: whitesmoke;
@@ -252,7 +244,7 @@ body{
 }
 .clearm
 {
-    clear: both; 
+    clear: both;
 }
 .login1{  /* login to open the login box */
     border-radius: 9px;
@@ -303,7 +295,7 @@ body{
     padding: 0;
     list-style: none;
     position: relative;
-    border-radius: 0.7rem;
+    border-radius: 0.7rem;   
 }
 .navbara ul li a {
     display: block;
@@ -354,7 +346,6 @@ img{
 .form-inline .form-check {
     width: 100%;
 }
-
 .my-2 {
     margin-right: 15px;
     float: right;
@@ -383,4 +374,9 @@ img{
 .form-control::-ms-expand {
     background-color: transparent;
     border: 0;
+}
+#map {
+        width: 550px;
+        height: 625px;
+        margin: auto;   
 }
