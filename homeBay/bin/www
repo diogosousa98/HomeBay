@@ -45,7 +45,6 @@ function normalizePort(val) {
     // port number
     return port;
   }
-
   return false;
 }
 

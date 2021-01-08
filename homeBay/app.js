@@ -5,6 +5,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var imovelRoute = require('./routes/imovelRoute');
+var clienteRoute = require('./routes/clienteRoute');
 
 var app = express();
 
@@ -16,5 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/API/imoveis', imovelRoute);
+app.use('/API/clientes', clienteRoute);
 
 module.exports = app;
