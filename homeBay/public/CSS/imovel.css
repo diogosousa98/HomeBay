@@ -1,0 +1,23 @@
+.lista-imoveis{
+    width: 30%;
+    padding: 5px 10px;
+    border-radius: 0.7rem;
+    border: black solid 1px;
+    margin: 2px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 0.3;
+}
+
+#imovel{
+    width: 100%;
+    height: 100%;
+}
+
+.firstsection{
+    background: rgb(233, 233, 233) no-repeat fixed; 
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+}

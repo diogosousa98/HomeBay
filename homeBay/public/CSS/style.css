@@ -1,12 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*  
-    Created on : NOV 22, 2020, 10:12:59 AM
-    Author     : tiagooliveira
-*/
+
 .Mapa{
     margin: 580px;
     font: Arial;
@@ -34,49 +26,31 @@ and open the template in the editor.
     float: inside;
     line-height:233px; 
 }
-.t18{
-    font: Arial;
-    font-size: 22px;
-    margin: 90px;
-    line-height: 25px;
-}
-.t17{
+
+.tpolicy{
     font: Arial;
     font-size: 20px;
     margin: 90px;
     line-height: 25px;
 }
-.t6{
-    font: Arial;
-    font-size: 20px;
-    margin: 90px;
-    line-height: 25px;
-}
-.t5{
+
+.thistorico{
     margin: 325px;
     font: Arial;
-    font-size: 800px;
-    padding: 64px;
-    float: inside;
-    line-height:233px; 
-}
-.t4{
-    margin: 325px;
-    font: Arial;
-    font-size: 80px;
+    font-size: 60px;
     padding: 200px;
     float: inside;
     line-height:233px; 
 }
-.t3{
+.tlista{
     margin: auto;
     font: Arial;
-    font-size: 80px;
-    padding: 400px;
+    font-size: 60px;
+    padding: 535px;
     float: inside;
-    line-height:233px; 
+    line-height:175px; 
 }
-.t2{
+.tsomos{
     margin: auto;
     font: Arial;
     font-size: 80px;
@@ -84,31 +58,13 @@ and open the template in the editor.
     float: inside;
     line-height:233px; 
 }
-.t1{
-    margin: 325px;
+.tmapa{
+    margin: auto;
     font: Arial;
-    font-size: 70px;
-    padding: 250px;
+    font-size: 80px;
+    padding: 640px;
     float: inside;
     line-height:233px; 
-}
-.feacture2{
-    position: relative;
-    width: 20%;
-    Float: left;
-    margin-top: 10px;
-    margin-left: 100px;
-    margin-right: 20px;
-    font-size: 17px;
-}
-.feacture1{
-    position: relative;
-    width: 20%;
-    Float: left;
-    margin-top: 10px;
-    margin-left: 100px;
-    margin-right: 20px;
-    font-size: 17px;
 }
 .hvrimg {
     position: relative;
@@ -166,8 +122,7 @@ input[type=text], input[type=password] {
 button:hover {
     opacity: 0.8;
 }
-/* Extra styles for the cancel button */
-/* Center the image and position the close button */
+/* Center the image at login */
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
@@ -221,29 +176,14 @@ span.psw {
     animation: animatezoom 0.6s
 }
 
-
-.cancelbtn {
-        width: 100%;
-        margin: 10px;
-    }
-
 body{
     font-family: Arial;
     font-size: 17px;
     margin: 0px;
     padding: 0px;
     line-height: 0px;  }
-.Registrar {
-    font-family: Arial;
-    font-size: 15px;
-    background-color: orangered;
-    float:left;
-    margin: -12px;
-    padding: 10px;
-    border-radius: 9px;
-}
-.clearm
-{
+
+.clearm{
     clear: both;
 }
 .login1{  /* login to open the login box */
@@ -269,24 +209,11 @@ body{
     width: 103%;   
 }
 
-/* Booton to cancel and leave login */
-.cancelbtn{
-    border-radius: 9px;
-    width: auto;
-    padding: 10px 18px;
-    background-color: red;
-    float: right;
-    background-color: red;
-    color: white;
-    padding: 13px 20px;
-    margin: -12px -11px;
-    border: none;
-    cursor: pointer;
-}
+/*menu config*/
 .navbara{ 
     border-radius: 0.7rem;
     text-align: center;
-    width: 98.42%;
+    width: 98%;
     background: orangered; 
     margin: 10px; 
 }
@@ -302,7 +229,7 @@ body{
     padding: 25px;
     color: black;
     text-decoration: none;
-    width: 186.2px;  
+    width: 243.7px;  
     border-radius: 0.7rem;
 }
 .navbara ul:after {

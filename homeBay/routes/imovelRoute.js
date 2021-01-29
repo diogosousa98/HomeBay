@@ -1,13 +1,11 @@
 var express = require('express');
 var router = express.Router();
-const Imovel = require('../models/imovelModel');
+const mImovel = require('../models/imovelModel');
 
 /* GET all. */
 router.get('/', async function(req, res, next) {
-  let filterObj = req.query;
-  let result = await Imovel.getAll(filterObj);
-  res.status(result.status).
-     send(result.data);
+  let imovel = await mImovel.getAllImoveis();
+  res.send(imovel);
 });
 
 module.exports = router;
