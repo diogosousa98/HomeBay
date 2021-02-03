@@ -7,15 +7,18 @@ async function createCards() {
 }
 
 function makeCard(imovel) {
-    return `<div class="grade-card">
-            <h2> Imóvel: ${imovel.IM_nome} </h2>
-            <h2> Rua: ${imovel.IM_M_rua} </h2>
-        </div>`;
+    let html = `<div class="grade-card">
+                <h2> Imóvel: ${imovel.IM_nome}</h2>
+                <h2> Rua: ${imovel.IM_M_rua}</h2>`;
+    html += '</div>';
 }
 
 window.onload = () => {
     createCards();
     $('#data').datepicker({ dateFormat: 'yy/mm/dd' });
+    let admin = sessionStorage.getItem('admin');
+    if (admin == 'true')
+        loggedIn = true;
 };
 
 function mostraReservar() {
@@ -40,7 +43,6 @@ async function reservar() {
             C_email: email,
         }
     };
-    console.log(body);
     let res = await $.ajax({
         type: "POST",
         url: '/api/visitas',
@@ -52,6 +54,14 @@ async function reservar() {
         alert('Visita marcada!');
     }
     else {
-        alert('Ocorreu um problema com a reserva,\n volte a tentar mais tarde.');
+        alert('Ocorreu um problema com a reserva.\nVolte a tentar mais tarde.');
     }
+}
+
+function editar(id) {
+
+}
+
+function consultar(id) {
+
 }

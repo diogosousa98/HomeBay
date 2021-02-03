@@ -23,4 +23,25 @@ router.post('/', async function (req, res, next) {
     }
 });
 
+router.get('/', async function (req, res, next) {
+    try {
+        let visitas = await mVisita.getAllVisitas();
+        res.send(visitas);
+    }
+    catch (err) {
+        res.send(err);
+    }
+});
+
+router.get('/historico', async function (req, res, next) {
+    let imovel = await mVisita.getAllVisitasInnerJoin();
+    res.send(imovel);
+});
+
+router.get('/historico/:imovel', async function (req, res, next) {
+    im_id = req.params.imovel;
+    let imovel = await mVisita.getAllVisitasInnerJoinPorImovel(im_id);
+    res.send(imovel);
+});
+
 module.exports = router;

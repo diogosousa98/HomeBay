@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title> Home Bay</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- MAPS -->
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-        <!-- /MAPS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
-        <link href="CSS/mapa.css" rel="stylesheet" type="text/css"/>
-        <script src="JS/mapa.js"></script>
-    </head> 
+<script src="JS/main.js"></script>
+    </head>
     <body>
         <section class="firstsection">
             <a href="index.html">
                 <img src="fotos/LOGO.png" width="190" height="50"/>
             </a>
-            <button onclick="document.getElementById('id01').style.display = 'block'" style="width:auto; position: relative;" class="login1">Login</button>
+            <button onclick="clickLogin()" id="btnLogin" style="width:auto; position: relative;" class="login1">Login</button>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             </form>
@@ -26,13 +20,13 @@
                 <form class="modal-content animate" action="/action_page.php">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
-                        <img src="fotos/LOGO.png" class="avatar" width="222" height="80">
+                         <img src="fotos/LOGO.png" class="avatar" width="222" height="80">
                     </div>
 
                     <div class="container">
                         <label><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required><br><br>
-                        <button class="Login2" type="submit">Login</button>                        
+                        <input type="text" id="uname" placeholder="Enter Username" name="uname" required><br><br>
+                        <input class="Login2" value="Login" onclick="login()" type="button"/>                        
                     </div>
                     <div class="container" style="background-color:#f1f1f1; height: 15px;">                                           
                     </div>
@@ -52,19 +46,20 @@
             <div class="navbara">
                 <ul>
                     <li><a href="index.html"> HOME </a></li>
-                    <li><a href="mapa.html"> MAPA </a></li>
+                    <li><a href="mapa.html"> MAPA </a></li>    
                     <li><a href="quemSomos.html"> QUEM SOMOS</a></li>                       
                     <li><a href="lista.html"> LISTA DE CASAS </a></li>     
                     <li><a href="historico.html"> HISTÓRICO </a></li> 
                 </ul>
             </div> 
             <div class="clearm"></div> 
-                <h10 class="tmapa"> Mapa <h10/>
-                    
         </section>
-        <main>
-            <div id="map"></div>
-        </main>
+                <h10 class="privacyPolicy"> Privacy Policy<h10/> 
+                <div class="clearm"></div>  
+                <p class="tpolicy"><strong> Privacy Policy: </strong></p>
+                <p class="tpolicy"> "In accordance with the Spanish Law 15/1999, of 13th of December, on Personal Data Protection and relating legal provisions (“LOPD”), we inform you that your personal data will be entered into automated files owned by Vacaciones eDreams, SL, with Spanish Tax ID Number B61965778 and registered address at Passeig Zona Franca, 191-205, 08038 Barcelona, Spain, in order to provide you with our services, as well as to send to you our commercial communications and, sometimes, perform surveys, statistics and analysis of market trends. You will only receive our commercial communications if you have given your express consent or if you have previously booked with us, and you will be able to decide not to receive them any further at any moment, by clicking the unsubscribe link shown in the footer of any of our corporate communications." (https://www.edreams.co.uk/privacy-policy/)
+                </p>
+   
     </body>
     <footer class="footer">
         <p><strong> Email: </strong><a href="mailto:geral@homebay.pt"> geral@homebay.pt  </a></p>  

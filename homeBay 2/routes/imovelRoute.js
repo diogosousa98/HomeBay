@@ -9,12 +9,23 @@ router.get('/', async function (req, res, next) {
   res.send(imovel);
 });
 
+router.get('/:imovel', async function (req, res, next) {
+  let imovel = await mImovel.getById(req.params.imovel);
+  res.send(imovel);
+});
+
 router.post('/', async function (req, res, next) {
   let imovel = req.body.imovel;
   let cliente = req.body.cliente;
 
   mCliente.create(cliente);
   mImovel.create(imovel);
+});
+
+router.put('/', async function (req, res, next) {
+  let imovel = await mImovel.update(req.body);
+  console.log(imovel);
+  res.send(imovel);
 });
 
 module.exports = router;

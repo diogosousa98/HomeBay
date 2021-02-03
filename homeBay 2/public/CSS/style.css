@@ -306,3 +306,11 @@ img{
         height: 625px;
         margin: auto;   
 }
+
+main {
+    display: flex;
+}
+
+.cpostal {
+    display: flex;
+}

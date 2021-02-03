@@ -8,6 +8,7 @@ const cors = require('cors');
 var imovelRoute = require('./routes/imovelRoute');
 var clienteRoute = require('./routes/clienteRoute');
 var visitaRoute = require('./routes/visitaRoute');
+var administradorRoute = require('./routes/administradorRoute');
 
 var app = express();
 
@@ -22,5 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/API/imoveis', imovelRoute);
 app.use('/API/clientes', clienteRoute);
 app.use('/API/visitas', visitaRoute);
+app.use('/API/administradores', administradorRoute);
 
 module.exports = app;

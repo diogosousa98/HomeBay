@@ -1,12 +1,22 @@
 const mysql = require("mysql");
 const util = require("util");
 
+// var pool = mysql.createPool({
+//   connectionLimit: 30,
+//   host: 'remotemysql.com',
+//   user: 'md4Quhwi0n',
+//   password: 'X1noFCgRnd',
+//   database: 'md4Quhwi0n',
+//   port: '3306'
+// })
+
+
 var pool = mysql.createPool({
   connectionLimit: 30,
-  host: 'remotemysql.com',
-  user: 'md4Quhwi0n',
-  password: 'X1noFCgRnd',
-  database: 'md4Quhwi0n',
+  host: 'localhost',
+  user: 'root',
+  password: 'root',
+  database: 'homebay',
   port: '3306'
 })
 

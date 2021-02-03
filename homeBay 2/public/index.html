@@ -4,23 +4,24 @@
         <title>Home Bay</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+        <script src="JS/main.js"></script>
         <style>
             .firstsection{
-                background: whitesmoke no-repeat fixed; 
-                height: 371px;
+                background: url(fotos/6.jpg) no-repeat fixed; 
+                height: 700px;
                 width: 100%;
                 background-size: cover;
-            }
+            }   
         </style>
     </head>
     <body>
         <section class="firstsection">
             <a href="index.html">
-            <img src="fotos/LOGO.png" width="190" height="50"/>
+                <img src="fotos/LOGO.png" width="190" height="50"/>
             </a>
-            
-            <button onclick="document.getElementById('id01').style.display = 'block'" style="width:auto; position: relative;" class="login1">Login</button>
+            <button onclick="clickLogin()" id="btnLogin" style="width:auto; position: relative;" class="login1">Login</button>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             </form>
@@ -28,13 +29,13 @@
                 <form class="modal-content animate" action="/action_page.php">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
-                        <img src="fotos/LOGO.png" class="avatar" width="222" height="80">
+                         <img src="fotos/LOGO.png" class="avatar" width="222" height="80">
                     </div>
-
+                    
                     <div class="container">
                         <label><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required><br><br>
-                        <button class="Login2" type="submit">Login</button>                        
+                        <input type="text" id="uname" placeholder="Enter Username" name="uname" required><br><br>
+                        <input class="Login2" value="Login" onclick="login()" type="button"/>                        
                     </div>
                     <div class="container" style="background-color:#f1f1f1; height: 15px;">                                           
                     </div>
@@ -54,29 +55,56 @@
             <div class="navbara">
                 <ul>
                     <li><a href="index.html"> HOME </a></li>
-                    <li><a href="mapa.html"> MAPA </a></li>   
+                    <li><a href="mapa.html"> MAPA </a></li>    
                     <li><a href="quemSomos.html"> QUEM SOMOS</a></li>                       
-                    <li><a href="lista.html"> LISTA DE CASAS </a>  </li>     
+                    <li><a href="lista.html"> LISTA DE CASAS </a></li>     
                     <li><a href="historico.html"> HISTÓRICO </a></li> 
                 </ul>
             </div> 
-            <div class="clearm"></div> 
-                <h10 class="thistorico"> Histórico <h10/> 
         </section>
         <div class="clearm"></div>    
-
         <div id="SecondSection">
-        <p><strong> Name </strong></p>
-        <p><img src="fotos//19.jpg" alt="BestDeals" style="float:left;width:200px;height:200px;"> Here would contain all the information about ... Here would contain all the information about the ...
-        </p> 
-        <div class="clearm"></div>
-        </div>         
+            <div class="hvrimg">
+                <img src="fotos/15.jpg" alt="Avatar" class="picture" width="270" height="270">
+                <div class="overlay">
+                    <div class="textimg"><b>Vivendas</b></div>
+                </div>
+            </div>
+            <div class="hvrimg">
+                <img src="fotos/16.jpg" alt="Avatar" class="picture" width="270" height="270">
+                <div class="overlay">
+                    <div class="textimg"><b>Apartamentos</b></div>
+                </div>
+            </div>
+            <div class="hvrimg">
+                <img src="fotos/17.jpg" alt="Avatar" class="picture" width="270" height="270">
+                <div class="overlay">
+                    <div class="textimg"><b>Escritorios</b></div>
+                </div>
+            </div>
+            <div class="hvrimg">
+                <img src="fotos/18.jpg" alt="Avatar" class="picture" width="270" height="270" >
+                <div class="overlay">
+                    <div class="textimg"><b>Quintas</b></div>
+                </div>
+            </div>
+        </div>
+        <div class="clearm"></div>        
     </body>
-
+    
     <footer class="footer">
         <p><strong> Email: </strong><a href="mailto:geral@homebay.pt"> geral@homebay.pt  </a></p>  
         <p><strong> Contact information: </strong><a href="911822099"> 911822091 </a> </p> 
         <p><strong> Policy: </strong><a href="privacyPolicy.html"> Privacy Policy </a></p>
         <p> Posted by: Tiago Oliveira, Diogo Sousa, Manuel Morgado </p>
-    </footer>    
+    </footer>
 </html>
+
+
+
+
+
+
+
+
+
