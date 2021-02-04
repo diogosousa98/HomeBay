@@ -11,7 +11,7 @@ module.exports.getAllVisitas = async function () {
 
 module.exports.getAllVisitasInnerJoin = async function () {
     try {
-        let imoveis = await pool.query('SELECT V.V_Data, V.V_Hora, C.C_nome, I.IM_nome FROM Visita AS V INNER JOIN Cliente AS C ON C.C_id = V.C_id INNER JOIN Imovel AS I ON I.IM_id = V.IM_id');
+        let imoveis = await pool.query('SELECT V.V_Data, V.V_Hora, C.C_nome, I.IM_nome FROM Visita AS V INNER JOIN Cliente AS C ON C.C_id = V.C_id INNER JOIN Imovel AS I ON I.IM_id = V.IM_id ORDER BY V.V_Data desc');
         return imoveis;
     } catch (err) {
         return err

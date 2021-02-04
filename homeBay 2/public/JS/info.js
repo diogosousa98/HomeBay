@@ -9,8 +9,13 @@ async function createCards() {
 function makeCard(imovel) {
     let html = `<div class="grade-card">
                 <h2> Imóvel: ${imovel.IM_nome}</h2>
-                <h2> Rua: ${imovel.IM_M_rua}</h2>`;
+                <h2> Rua: ${imovel.IM_M_rua}</h2>
+                <h2> Tipologia: T${imovel.IM_tipologia}</h2>
+                <h2> Área útil: ${imovel.IM_area}m²</h2>
+                <h2> Localidade: ${imovel.IM_M_localidade}</h2>
+                <h2> Preço: ${imovel.IM_preco} €</h2>`;
     html += '</div>';
+    return html;
 }
 
 window.onload = () => {
@@ -31,6 +36,12 @@ async function reservar() {
     let email = document.getElementById('email').value;
     let data = document.getElementById('data').value;
     let hora = document.getElementById('hora').value;
+
+    if (nome == '' && telemovel == '' && email == '' && data == '' && hora == '') {
+        alert('Por favor preencha os campos todos');
+        return;
+    }
+
     let body = {
         visita: {
             V_data: data,
@@ -56,12 +67,4 @@ async function reservar() {
     else {
         alert('Ocorreu um problema com a reserva.\nVolte a tentar mais tarde.');
     }
-}
-
-function editar(id) {
-
-}
-
-function consultar(id) {
-
 }

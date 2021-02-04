@@ -1,4 +1,4 @@
-.lista-imoveis{
+.lista-imoveis { 
     width: 30%;
     padding: 5px 10px;
     border-radius: 0.7rem;
@@ -7,7 +7,15 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    line-height: 0.3;
+}
+
+.lista-imoveis section {
+    
+    display: flex;   
+}
+
+.lista-imoveis p {
+    height: fit-content;
 }
 
 #imovel{
@@ -20,4 +28,8 @@
     height: 300px;
     width: 100%;
     background-size: cover;
+}
+
+img {
+    max-width: 200px;
 }

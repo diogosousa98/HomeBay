@@ -5,7 +5,7 @@ window.onload = function () {
 
 
     // initialize Leaflet
-    map = L.map('map').setView({ lon: 0, lat: 0 }, 2);
+    map = L.map('map').setView({ lon: -9.205317, lat: 38.769129 }, 11);
 
     // add the OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -26,7 +26,8 @@ async function populateMarkers() {
     });
     for (var idx in imoveis) {
         let imovel = imoveis[idx];
-        L.marker({ lat: imovel.IM_M_latitude, lon: imovel.IM_M_longitude }).bindPopup(`<p>${imovel.IM_nome}</p><button onclick="mostralocalizacao(${idx})">Ver</button>`).addTo(map);
+        L.marker({ lat: imovel.IM_M_latitude, lon: imovel.IM_M_longitude }).bindPopup(`<p>${imovel.IM_nome}</p>
+        <img src="fotos/${imovel.IM_imagem}"><br><button onclick="mostralocalizacao(${idx})">Ver</button>`).addTo(map);
     }
 }
 

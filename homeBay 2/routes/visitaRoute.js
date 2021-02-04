@@ -6,7 +6,6 @@ const mVisita = require('../models/visitaModel');
 
 router.post('/', async function (req, res, next) {
     try {
-
         let cliente = await mCliente.getByEmail(req.body.cliente.C_email);
         let vis = req.body.visita;
         if (cliente.length == 0) {
@@ -19,7 +18,8 @@ router.post('/', async function (req, res, next) {
         res.send(visita);
     }
     catch (err) {
-        res.send(err);
+        console.log(err.message);
+        res.send(err.message);
     }
 });
 

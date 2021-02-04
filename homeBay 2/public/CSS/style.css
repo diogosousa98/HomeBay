@@ -37,7 +37,7 @@
     margin: 325px;
     font: Arial;
     font-size: 60px;
-    padding: 200px;
+    padding: 250px;
     float: inside;
     line-height:233px; 
 }
@@ -45,23 +45,21 @@
     margin: auto;
     font: Arial;
     font-size: 60px;
-    padding: 535px;
+    padding: 700px;
     float: inside;
     line-height:175px; 
 }
 .tsomos{
-    margin: auto;
     font: Arial;
-    font-size: 80px;
-    padding: 450px;
-    float: inside;
-    line-height:233px; 
+    font-size: 20px;
+    margin: 30px;
+    line-height: 25px;
 }
 .tmapa{
     margin: auto;
     font: Arial;
     font-size: 80px;
-    padding: 640px;
+    padding: 700px;
     float: inside;
     line-height:233px; 
 }
@@ -179,8 +177,7 @@ body{
     font-family: Arial;
     font-size: 17px;
     margin: 0px;
-    padding: 0px;
-    line-height: 0px;  }
+    padding: 0px;}
 
 .clearm{
     clear: both;
@@ -313,4 +310,14 @@ main {
 
 .cpostal {
     display: flex;
+}
+
+#espaco{
+    margin: 5px;
+    padding-bottom: 250px;
+}
+
+.tnome{
+    font-size: 60px;
+    text-align: center;    
 }

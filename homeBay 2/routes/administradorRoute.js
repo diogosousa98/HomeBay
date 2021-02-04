@@ -6,7 +6,7 @@ const mAdmins = require('../models/administradorModel');
 router.get('/login/:admin', async function (req, res, next) {
     let admin = req.params.admin;
     let existe = await mAdmins.getByNome(admin);
-    if (existe) res.send(true);
+    if (existe.length != 0) res.send(true);
     else res.send(false);
 });
 

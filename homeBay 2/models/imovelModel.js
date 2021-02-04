@@ -31,7 +31,7 @@ module.exports.update = async function (imovel) {
 
 module.exports.getById = async function (id) {
     try {
-        let result = await pool.query('SELECT * FROM Imovel WHERE IM_id', id);
+        let result = await pool.query('SELECT * FROM Imovel WHERE IM_id = ?', id);
         return result[0];
     }
     catch (err) {

@@ -6,7 +6,7 @@ async function login() {
         url: '/api/administradores/login/' + username,
         method: 'get',
     });
-
+    console.log(result);
     if (result == true) {
         sessionStorage.setItem('admin', true);
         window.location = '/Lista.html';
@@ -18,7 +18,6 @@ async function login() {
 window.addEventListener('load', function () {
 
     let admin = sessionStorage.getItem('admin');
-    console.log('poi')
     if (admin == 'true')
         loggedIn = true;
     if (loggedIn) {

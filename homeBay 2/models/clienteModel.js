@@ -22,7 +22,7 @@ module.exports.create = async function (cliente) {
 
 module.exports.getByEmail = async function (email) {
     try {
-        let cliente = await pool.query('SELECT * FROM cliente WHERE C_Email = ?', email);
+        let cliente = await pool.query('SELECT * FROM Cliente WHERE C_Email = ?', email);
         return cliente;
     }
     catch (err) {

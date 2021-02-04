@@ -36,16 +36,23 @@ function showImoveis(imoveis) {
     let html = "";
     let imovel = imoveis[index];
     html += `<div class="lista-imoveis">
-        <h2> ${imovel.IM_nome} </h2>
-        <h2> Localidade: ${imovel.IM_M_localidade} </h2>
-        <h2> Área: ${imovel.IM_area}m² </h2> 
-        <h2> Preço: ${imovel.IM_preco}€ </h2>
-        <input type="button" value="Reservar" onclick= "showInfo(${index})"/>`;
-    if (isAdmin == true) {
+        <section>
+        <section>
+        <p> ${imovel.IM_nome} </p>
+        <p> Localidade: ${imovel.IM_M_localidade} </p>
+        <p> Área: ${imovel.IM_area}m² </p> 
+        <p> Preço: ${imovel.IM_preco}€ </p>
+        </section>
+        <img src="fotos/${imovel.IM_imagem}"/>
+        </section>`;
+    if (isAdmin != true) {
+      html += `<input type="button" value="Mais Info" onclick= "showInfo(${index})"/>`;
+    }
+    else {
       html += `   <input type="button" value="Editar" onclick= "editar(${index})"/>`;
       html += `   <input type="button" value="Consultar Histórico" onclick="consultar(${index})"/>`;
     }
-    html += `</div>`;
+    html += `</section></div>`;
     document.getElementById("imovel").innerHTML += html;
   }
 }
