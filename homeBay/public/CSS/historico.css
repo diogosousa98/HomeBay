@@ -1,0 +1,10 @@
+main {
+    flex-direction: column;
+}
+
+.card {
+    padding: 15px;
+    border: 1px solid black;
+    display: flex;
+    margin: 5px;
+}

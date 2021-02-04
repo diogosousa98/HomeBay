@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Bay</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+<script src="JS/main.js"></script>
+        <link href="CSS/historico.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="JS/editar.js" ></script>
+    </head>
+    <body>
+        <section class="firstsection">
+            <a href="index.html">
+            <img src="fotos/LOGO.png" width="190" height="50"/>
+            </a>
+            
+            <button onclick="clickLogin()" id="btnLogin" style="width:auto; position: relative;" class="login1">Login</button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                        <img src="fotos/LOGO.png" class="avatar" width="222" height="80">
+                    </div>
+
+                    <div class="container">
+                        <label><b>Username</b></label>
+                        <input type="text" id="uname" placeholder="Enter Username" name="uname" required><br><br>
+                        <input class="Login2" value="Login" onclick="login()" type="button"/>                        
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1; height: 15px;">                                           
+                    </div>
+                </form>
+            </div>
+            <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                    }
+                };
+            </script>
+            <div class="navbara">
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="mapa.html"> MAPA </a></li>   
+                    <li><a href="quemSomos.html"> QUEM SOMOS</a></li>                       
+                    <li><a href="lista.html"> LISTA DE CASAS </a>  </li>     
+                    <li><a href="historico.html"> HISTÓRICO </a></li> 
+                </ul>
+            </div> 
+            <div class="clearm"></div> 
+                <h10 class="thistorico"> Editar <h10/> 
+        </section>
+        <main id="main">
+            <label for="nome">Nome</label><input type="text" id="nome" name="nome"/>
+            <label for="area">Area</label><input type="text" id="area" name="area"/>
+            <label for="tipologia">Tipologia</label><input type="text" id="tipologia" name="tipologia"/>
+            <label for="preco">Preço</label><input type="text" id="preco" name="preco"/>
+            <label for="mRua">Rua</label><input type="text" id="mRua" name="mRua"/>
+            <label for="mNumero">Número</label><input type="text" id="mNumero" name="mNumero"/>
+            <label for="cpostal3">CódigoPostal<section class="cpostal"></label><input type="text" id="cpostal3" name="cpostal3"/><input type="text" id="cpostal4" name="cpostal3"/></section>
+            <label for="localidade">Localidade</label><input type="text" id="localidade" name="localidade"/>
+            <label for="descricao">Descrição</label><input type="text" id="descricao" name="descricao"/>
+            <button onclick="submit()">Submit</button>
+        </main>
+        </div>         
+    </body>
+
+    <footer class="footer">
+        <p><strong> Email: </strong><a href="mailto:geral@homebay.pt"> geral@homebay.pt  </a></p>  
+        <p><strong> Contact information: </strong><a href="911822099"> 911822091 </a> </p> 
+        <p><strong> Policy: </strong><a href="privacyPolicy.html"> Privacy Policy </a></p>
+        <p> Posted by: Tiago Oliveira, Diogo Sousa, Manuel Morgado </p>
+    </footer>    
+</html>
