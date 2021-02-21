@@ -3,7 +3,7 @@ async function login() {
     let username = document.getElementById('uname').value
 
     let result = await $.ajax({
-        url: '/api/administradores/login/' + username,
+        url: '/API/administradores/login/' + username,
         method: 'get',
     });
     console.log(result);

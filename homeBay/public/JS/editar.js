@@ -7,7 +7,7 @@ window.onload = function () {
 
 async function populateFields() {
     let res = await $.ajax({
-        url: "/api/imoveis/" + imovel,
+        url: "/API/imoveis/" + imovel,
         method: "get",
         dataType: "json"
     });
@@ -43,7 +43,7 @@ async function submit() {
 
     try {
         let result = await $.ajax({
-            url: '/api/imoveis',
+            url: '/API/imoveis',
             method: 'put',
             dataType: 'json',
             data: JSON.stringify(body),
