@@ -44,4 +44,14 @@ router.get('/historico/:imovel', async function (req, res, next) {
     res.send(imovel);
 });
 
+
+
+router.get('/visitasPorData/:data', async function (req, res, next) {
+    data = req.params.data
+    let imovel = await mVisita.getAllVisitasInnerJoinPorImovelPorData(data);
+    res.send(imovel);
+});
+
+
+
 module.exports = router;

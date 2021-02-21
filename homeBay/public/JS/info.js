@@ -56,7 +56,7 @@ async function reservar() {
     };
     let res = await $.ajax({
         type: "POST",
-        url: '/API/visitas',
+        url: '/api/visitas',
         data: JSON.stringify(body),
         dataType: 'json',
         contentType: "application/json"

@@ -4,7 +4,7 @@ let imovel;
 window.onload = async function () {
     imovel = JSON.parse(sessionStorage.getItem("imovel"));
     visitas = await $.ajax({
-        url: '/API/visitas/historico/' + imovel.IM_id,
+        url: '/api/visitas/historico/' + imovel.IM_id,
         method: 'GET'
     });
 

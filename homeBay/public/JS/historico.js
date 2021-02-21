@@ -2,7 +2,7 @@ let visitas = [];
 
 window.onload = async function () {
     visitas = await $.ajax({
-        url: '/API/visitas/historico',
+        url: '/api/visitas/historico',
         method: 'GET'
     });
 

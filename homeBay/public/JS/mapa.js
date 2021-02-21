@@ -3,9 +3,8 @@ var imoveis;
 
 window.onload = function () {
 
-
     // initialize Leaflet
-    map = L.map('map').setView({ lon: -9.205317, lat: 38.769129 }, 11);
+    map = L.map('map').setView([38.769129, -9.205317, ], 11);
 
     // add the OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -17,6 +16,7 @@ window.onload = function () {
     L.control.scale().addTo(map);
 
     populateMarkers();
+    runDirection();
 }
 
 async function populateMarkers() {
@@ -27,7 +27,7 @@ async function populateMarkers() {
     for (var idx in imoveis) {
         let imovel = imoveis[idx];
         L.marker({ lat: imovel.IM_M_latitude, lon: imovel.IM_M_longitude }).bindPopup(`<p>${imovel.IM_nome}</p>
-        <img src="fotos/${imovel.IM_imagem}"><br><button onclick="mostralocalizacao(${idx})">Ver</button>`).addTo(map);
+        <br><button onclick="mostralocalizacao(${idx})">Ver</button>`).addTo(map);
     }
 }
 

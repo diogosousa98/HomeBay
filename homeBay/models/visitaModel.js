@@ -36,3 +36,13 @@ module.exports.create = async function (visita) {
         return err;
     }
 }
+
+
+module.exports.getAllVisitasInnerJoinPorImovelPorData = async function (V_data) {
+    try {
+        let imoveis = await pool.query('SELECT * FROM Visita as v inner join Imovel as i on v.IM_id = i.IM_id where v.V_Data = ?', V_data);
+        return imoveis;
+    } catch (err) {
+        return err
+    }
+}

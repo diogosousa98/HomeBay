@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/API/imoveis', imovelRoute);
 app.use('/API/clientes', clienteRoute);
-app.use('//visitas', visitaRoute);
+app.use('/API/visitas', visitaRoute);
 app.use('/API/administradores', administradorRoute);
 
 module.exports = app;
