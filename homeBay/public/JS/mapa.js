@@ -2,7 +2,6 @@ var map;
 var imoveis;
 
 window.onload = function () {
-
     // initialize Leaflet
     map = L.map('map').setView([38.769129, -9.205317, ], 11);
 
@@ -16,7 +15,6 @@ window.onload = function () {
     L.control.scale().addTo(map);
 
     populateMarkers();
-    runDirection();
 }
 
 async function populateMarkers() {

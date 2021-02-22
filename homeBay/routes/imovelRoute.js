@@ -15,11 +15,9 @@ router.get('/:imovel', async function (req, res, next) {
 });
 
 router.post('/', async function (req, res, next) {
-  let imovel = req.body.imovel;
-  let cliente = req.body.cliente;
-
-  mCliente.create(cliente);
-  mImovel.create(imovel);
+  let imovel = await mImovel.create(req.body);
+  console.log(imovel);
+  res.send(imovel);
 });
 
 router.put('/', async function (req, res, next) {

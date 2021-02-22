@@ -299,7 +299,7 @@ img{
     border: 0;
 }
 #map {
-        width: 700px;
+        width: 550px;
         height: 625px;
         margin: auto;   
 }
@@ -322,7 +322,6 @@ main {
     text-align: center;    
 }
 
-#form {
-    padding: 0;
-    margin-right: 250px;
+.hidden {
+    display: none;
 }

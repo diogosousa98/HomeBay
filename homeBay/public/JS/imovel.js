@@ -56,3 +56,7 @@ function showImoveis(imoveis) {
     document.getElementById("imovel").innerHTML += html;
   }
 }
+
+function addImovel() {
+  window.location = '/addImovel.html';
+}

@@ -5,10 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+<script src="JS/main.js"></script>
         <link href="CSS/historico.css" rel="stylesheet" type="text/css"/>
-        <script src="JS/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="JS/historico.js" ></script>
+        <script src="JS/addImovel.js" ></script>
     </head>
     <body>
         <section class="firstsection">
@@ -57,10 +57,19 @@
                 </ul>
             </div> 
             <div class="clearm"></div> 
-                <h10 class="thistorico"> Histórico <h10/> 
+                <h10 class="thistorico"> Adicionar Imóvel <h10/> 
         </section>
         <main id="main">
-
+            <label for="nome">Nome</label><input type="text" id="nome" name="nome"/>
+            <label for="area">Area</label><input type="text" id="area" name="area"/>
+            <label for="tipologia">Tipologia</label><input type="text" id="tipologia" name="tipologia"/>
+            <label for="preco">Preço</label><input type="text" id="preco" name="preco"/>
+            <label for="mRua">Rua</label><input type="text" id="mRua" name="mRua"/>
+            <label for="mNumero">Número</label><input type="text" id="mNumero" name="mNumero"/>
+            <label for="cpostal3">CódigoPostal<section class="cpostal"></label><input type="text" id="cpostal4" name="cpostal3"/><input type="text" id="cpostal3" name="cpostal3"/></section>
+            <label for="localidade">Localidade</label><input type="text" id="localidade" name="localidade"/>
+            <label for="descricao">Descrição</label><input type="text" id="descricao" name="descricao"/>
+            <button onclick="submit()">Submit</button>
         </main>
         </div>         
     </body>

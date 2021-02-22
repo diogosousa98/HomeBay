@@ -26,6 +26,12 @@ window.addEventListener('load', function () {
     else {
         document.getElementById('btnLogin').innerHTML = 'Login';
     }
+    if (!loggedIn) {
+        document.getElementById('historico').classList.add('hidden');
+    }
+    else {
+        document.getElementById('historico').classList.remove('hidden');
+    }
 });
 
 function clickLogin() {
