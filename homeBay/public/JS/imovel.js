@@ -8,8 +8,15 @@ window.onload = async function () {
       method: "get",
     });
     let admin = sessionStorage.getItem('admin');
-    if (admin == 'true')
+    if (admin == 'true') {
       isAdmin = true;
+
+      document.getElementById('btnAddImovel').classList.remove('hidden');
+    }
+    else {
+
+      document.getElementById('btnAddImovel').classList.add('hidden');
+    }
     showImoveis(imoveis);
   } catch (err) {
     console.log(err);
